@@ -1,0 +1,6 @@
+{
+    "host": "46.173.214.184",
+    "port": 5672,
+    "login": "rabbitmq",
+    "password": "rabbitmq"
+}

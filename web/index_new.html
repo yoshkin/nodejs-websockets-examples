@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Socket.IO chat</title>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { font: 13px Helvetica, Arial; }
+            form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+            form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+            form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+            #messages { list-style-type: none; margin: 0; padding: 0; }
+            #messages li { padding: 5px 10px; }
+            #messages li:nth-child(odd) { background: #eee; }
+        </style>
+    </head>
+<body>
+
+
+
+<script src="/socket.io.js"></script>
+<script>
+    (function () {
+        let url_param = getParam('client_id');
+        let consumer_id = (url_param) ? url_param : 10;
+        let localdev = 'http://websockets.localdev';
+        let production = 'http://192.168.251.183:8001';
+
+        let consumer = 'user-' + consumer_id;
+        let type = 'private_message';
+        let token = 'consumer-super-secret-token' + consumer_id; // получаем с бекенда ?
+        var socket = io(localdev, {
+            path: '/socket/',
+            transportOptions: {
+                polling: {
+                    extraHeaders: {
+                        'X-My-Header': 'websocket rocks',
+                        'Authorization': 'Bearer ' + token,
+                        'User': consumer,
+                        'Type': type
+                    }
+                }
+            }
+        });
+        socket.on('connect', function(){
+            console.log('connected');
+        });
+        socket.on('private_message', function(msg){
+            console.log(msg);
+        });
+
+        socket.on('new_message', function(msg){
+            console.log(msg);
+        });
+        socket.on('auth', function(msg){
+            console.log(msg);
+        });
+
+        function getParam(param){
+            return new URLSearchParams(window.location.search).get(param);
+        }
+
+    })();
+</script>
+</body>
+</html>

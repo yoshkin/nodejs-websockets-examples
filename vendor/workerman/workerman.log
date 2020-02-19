@@ -1,0 +1,150 @@
+2019-05-20 09:42:21 pid:1090 Workerman[server.php] start in DEBUG mode
+2019-05-20 10:02:18 pid:1090 Workerman[server.php] stopping ...
+2019-05-20 10:02:18 pid:1090 Workerman[server.php] has been stopped
+2019-05-20 10:21:41 pid:2548 Workerman[server.php] start in DEBUG mode
+2019-05-20 10:40:41 pid:2548 Workerman[server.php] stopping ...
+2019-05-20 10:40:41 pid:2548 Workerman[server.php] has been stopped
+2019-05-20 10:40:44 pid:4973 Workerman[server.php] start in DEBUG mode
+2019-05-20 10:57:48 pid:2356 Workerman[server.php] start in DEBUG mode
+2019-05-20 10:58:48 pid:2345 Workerman[server.php] start in DEBUG mode
+2019-05-20 11:06:33 pid:2359 Workerman[server.php] start in DEBUG mode
+2019-05-20 11:09:38 pid:2358 Workerman[server.php] start in DEBUG mode
+2019-05-20 11:11:40 pid:2358 Workerman[server.php] stopping ...
+2019-05-20 11:11:40 pid:2358 Workerman[server.php] has been stopped
+2019-05-20 11:11:41 pid:2622 Workerman[server.php] start in DEBUG mode
+2019-05-20 12:26:10 pid:2449 Workerman[server.php] start in DEBUG mode
+2019-05-20 12:29:02 pid:2449 Workerman[server.php] stopping ...
+2019-05-20 12:29:02 pid:2449 Workerman[server.php] has been stopped
+2019-05-20 12:29:03 pid:2821 Workerman[server.php] start in DEBUG mode
+2019-05-20 12:29:40 pid:2821 Workerman[server.php] stopping ...
+2019-05-20 12:29:40 pid:2821 Workerman[server.php] has been stopped
+2019-05-20 12:29:42 pid:2908 Workerman[server.php] start in DEBUG mode
+2019-05-20 12:37:25 pid:2415 Workerman[server.php] start in DEBUG mode
+2019-05-20 12:39:22 pid:2415 Workerman[server.php] stopping ...
+2019-05-20 12:39:22 pid:2415 Workerman[server.php] has been stopped
+2019-05-20 12:39:23 pid:2673 Workerman[server.php] start in DEBUG mode
+2019-05-20 12:40:49 pid:2673 Workerman[server.php] stopping ...
+2019-05-20 12:40:49 pid:2673 Workerman[server.php] has been stopped
+2019-05-20 12:40:50 pid:2864 Workerman[server.php] start in DEBUG mode
+2019-05-20 12:48:08 pid:3158 Workerman[server.php] start in DEBUG mode
+2019-05-20 12:56:55 pid:2484 Workerman[server.php] start in DEBUG mode
+2019-05-20 13:06:03 pid:2456 Workerman[server.php] start in DEBUG mode
+2019-05-20 13:15:32 pid:2442 Workerman[server.php] start in DEBUG mode
+2019-05-20 13:28:33 pid:2394 Workerman[server.php] start in DEBUG mode
+2019-05-20 13:41:13 pid:2805 Workerman[server.php] start in DEBUG mode
+2019-05-20 13:41:59 pid:2805 Workerman[server.php] stopping ...
+2019-05-20 13:41:59 pid:2805 Workerman[server.php] has been stopped
+2019-05-20 13:42:00 pid:2910 Workerman[server.php] start in DEBUG mode
+2019-05-20 13:47:01 pid:2488 Workerman[server.php] start in DEBUG mode
+2019-05-20 13:48:10 pid:2374 Workerman[server.php] start in DEBUG mode
+2019-05-20 13:54:02 pid:2369 Workerman[server.php] start in DEBUG mode
+2019-05-20 14:05:35 pid:2369 Workerman[server.php] stopping ...
+2019-05-20 14:05:35 pid:2369 Workerman[server.php] has been stopped
+2019-05-20 14:09:36 pid:2353 Workerman[server.php] start in DEBUG mode
+2019-05-21 04:29:40 pid:2393 Workerman[server.php] start in DEBUG mode
+2019-05-21 04:31:55 pid:2433 Workerman[server.php] start in DEBUG mode
+2019-05-21 04:33:48 pid:2412 Workerman[server.php] start in DEBUG mode
+2019-05-21 04:45:00 pid:2366 Workerman[server.php] start in DEBUG mode
+2019-05-21 04:51:03 pid:2338 Workerman[websockets/web/server.php] start in DEBUG mode
+2019-05-21 04:52:36 pid:2338 Workerman[server.php] stopping ...
+2019-05-21 04:52:36 pid:2338 Workerman[server.php] has been stopped
+2019-05-21 04:52:37 pid:2544 Workerman[websockets/web/server.php] start in DEBUG mode
+2019-05-21 04:53:29 pid:2544 Workerman[server.php] stopping ...
+2019-05-21 04:53:29 pid:2544 Workerman[server.php] has been stopped
+2019-05-21 04:53:31 pid:2664 Workerman[websockets/web/server.php] start in DEBUG mode
+2019-05-21 04:53:41 pid:2667 Exception: You can't send(object) to client, you need to convert it to a string.  in /shared/httpd/websockets/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /shared/httpd/websockets/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Object(Workerman\Connection\AsyncTcpConnection), Object(Workerman\Connection\TcpConnection))
+#1 /shared/httpd/websockets/web/server.php(45): Workerman\Connection\TcpConnection->send(Object(Workerman\Connection\AsyncTcpConnection))
+#2 [internal function]: {closure}(Object(Workerman\Connection\AsyncTcpConnection), Object(stdClass))
+#3 /shared/httpd/websockets/vendor/workerman/workerman/Connection/TcpConnection.php(681): call_user_func(Object(Closure), Object(Workerman\Connection\AsyncTcpConnection), '{"user":"tester...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32)
+#5 /shared/httpd/websockets/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /shared/httpd/websockets/web/server.php(65): Workerman\Worker::runAll()
+#12 {main}
+2019-05-21 04:53:41 pid:2667 Worker[2667] process terminated
+2019-05-21 04:53:41 pid:2664 worker[none:2667] exit with status 64000
+2019-05-21 05:00:46 pid:2666 Exception: You can't send(object) to client, you need to convert it to a string.  in /shared/httpd/websockets/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /shared/httpd/websockets/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Object(Workerman\Connection\AsyncTcpConnection), Object(Workerman\Connection\TcpConnection))
+#1 /shared/httpd/websockets/web/server.php(45): Workerman\Connection\TcpConnection->send(Object(Workerman\Connection\AsyncTcpConnection))
+#2 [internal function]: {closure}(Object(Workerman\Connection\AsyncTcpConnection), Object(stdClass))
+#3 /shared/httpd/websockets/vendor/workerman/workerman/Connection/TcpConnection.php(681): call_user_func(Object(Closure), Object(Workerman\Connection\AsyncTcpConnection), '{"user":"tester...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32)
+#5 /shared/httpd/websockets/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /shared/httpd/websockets/web/server.php(65): Workerman\Worker::runAll()
+#12 {main}
+2019-05-21 05:00:46 pid:2666 Worker[2666] process terminated
+2019-05-21 05:00:46 pid:2664 worker[none:2666] exit with status 64000
+2019-05-21 05:02:17 pid:3593 Exception: You can't send(object) to client, you need to convert it to a string.  in /shared/httpd/websockets/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /shared/httpd/websockets/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Object(Workerman\Connection\AsyncTcpConnection), Object(Workerman\Connection\TcpConnection))
+#1 /shared/httpd/websockets/web/server.php(45): Workerman\Connection\TcpConnection->send(Object(Workerman\Connection\AsyncTcpConnection))
+#2 [internal function]: {closure}(Object(Workerman\Connection\AsyncTcpConnection), Object(stdClass))
+#3 /shared/httpd/websockets/vendor/workerman/workerman/Connection/TcpConnection.php(681): call_user_func(Object(Closure), Object(Workerman\Connection\AsyncTcpConnection), '{"user":"tester...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #34)
+#5 /shared/httpd/websockets/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /shared/httpd/websockets/web/server.php(65): Workerman\Worker::runAll()
+#14 {main}
+2019-05-21 05:02:17 pid:3593 Worker[3593] process terminated
+2019-05-21 05:02:17 pid:2664 worker[none:3593] exit with status 64000
+2019-05-21 05:02:41 pid:2691 Exception: You can't send(object) to client, you need to convert it to a string.  in /shared/httpd/websockets/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /shared/httpd/websockets/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Object(Workerman\Connection\AsyncTcpConnection), Object(Workerman\Connection\TcpConnection))
+#1 /shared/httpd/websockets/web/server.php(45): Workerman\Connection\TcpConnection->send(Object(Workerman\Connection\AsyncTcpConnection))
+#2 [internal function]: {closure}(Object(Workerman\Connection\AsyncTcpConnection), Object(stdClass))
+#3 /shared/httpd/websockets/vendor/workerman/workerman/Connection/TcpConnection.php(681): call_user_func(Object(Closure), Object(Workerman\Connection\AsyncTcpConnection), '{"user":"tester...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #33)
+#5 /shared/httpd/websockets/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /shared/httpd/websockets/web/server.php(65): Workerman\Worker::runAll()
+#14 {main}
+2019-05-21 05:02:41 pid:2691 Worker[2691] process terminated
+2019-05-21 05:02:41 pid:2664 worker[none:2691] exit with status 64000
+2019-05-21 05:02:54 pid:3835 Exception: You can't send(object) to client, you need to convert it to a string.  in /shared/httpd/websockets/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /shared/httpd/websockets/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Object(Workerman\Connection\AsyncTcpConnection), Object(Workerman\Connection\TcpConnection))
+#1 /shared/httpd/websockets/web/server.php(45): Workerman\Connection\TcpConnection->send(Object(Workerman\Connection\AsyncTcpConnection))
+#2 [internal function]: {closure}(Object(Workerman\Connection\AsyncTcpConnection), Object(stdClass))
+#3 /shared/httpd/websockets/vendor/workerman/workerman/Connection/TcpConnection.php(681): call_user_func(Object(Closure), Object(Workerman\Connection\AsyncTcpConnection), '{"user":"tester...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #36)
+#5 /shared/httpd/websockets/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /shared/httpd/websockets/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /shared/httpd/websockets/web/server.php(65): Workerman\Worker::runAll()
+#14 {main}
+2019-05-21 05:02:54 pid:3835 Worker[3835] process terminated
+2019-05-21 05:02:54 pid:2664 worker[none:3835] exit with status 64000
+2019-05-21 05:12:29 pid:2664 Workerman[server.php] stopping ...
+2019-05-21 05:12:29 pid:2664 Workerman[server.php] has been stopped
+2019-05-21 05:12:30 pid:5088 Workerman[websockets/web/server.php] start in DEBUG mode
+2019-05-28 11:49:04 pid:5088 Workerman[server.php] stopping ...
+2019-05-28 11:49:04 pid:5088 Workerman[server.php] has been stopped
